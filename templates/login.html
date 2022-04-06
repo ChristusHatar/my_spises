@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/my.css">
+    <link rel="stylesheet" href="/static/my.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login page </title>
+
+</head>
+
+
+
+<body>
+<!-- Navigation field -->
+ <div class="topnav">
+    <a class="active" href="'/">Login</a>
+    <a href="/">Home</a>
+    <a href="/sign_up">Sign Up</a>
+    <a href="/about">About page</a>
+    <a href="/services">Our Services/Products</a>
+    <a href="/contacts">Contact Us</a>
+    <input type="text" placeholder="Search..">
+    </div>
+
+
+<!-- login field -->
+
+<form action="/"  class="center" autocomplete="off">
+ <h2>Login</h2>
+    <!-- username field -->
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" placeholder="Enter Username" required autocomplete="off"><br>
+
+    <!-- email field -->
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter Email" autocomplete="off" required><br>
+
+     <!-- password field -->
+    <label for="password1">Password:</label><br>
+    <input type="password" id="password1" name="password1" placeholder="Enter Password"
+           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+           title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" autocomplete="off" required>
+
+
+<!-- checkbox field -->
+    <div>
+        <span class="psw">Please<a href="/sign_up"> Remember me?</a></span><br>
+    </div>
+<!-- if forgot password -->
+  <div class="container">
+      <span class="psw">Forgot <a href="/sign_up">password?</a></span><br>
+       <button type="submit" class="loginbtn">Login</button>
+  </div>
+
+</form>
+
+
+
+</body>
+</html>
+
+
